@@ -1,0 +1,45 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial;
+  }
+
+  .h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  img {
+    width: 50px;
+  }
+
+  .move-btn {
+    background-color: transparent;
+    border: 3px solid white;
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    border-radius: 100%;
+    margin: 10px;
+  }
+
+  .result {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+
+  .score {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 60px;
+  }
+
+  .reset-btn {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 15px;
+  }
