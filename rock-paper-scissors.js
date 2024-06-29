@@ -19,7 +19,21 @@ let score = JSON.parse(localStorage.getItem("score")) || {
     }
     return computerMove;
   }
-
+  let isAutoPlay = false;
+  let intervalId;
+  function autoPlay() {
+    if (isAutoPlay===false) {
+      isAutoPlay = true;
+      document.getElementById("auto-play-id").innerHTML = "Stop Auto Play";
+      intervalId = setInterval(function(){
+        playGame(getComputerMove());
+      },1000)
+    }else{
+      isAutoPlay = false;
+      clearInterval(intervalId);
+      document.getElementById("auto-play-id").innerHTML = "Auto Play";
+    }
+  }
   function playGame(choice) {
     computerMove = getComputerMove();
     if (choice === "Rock") {
