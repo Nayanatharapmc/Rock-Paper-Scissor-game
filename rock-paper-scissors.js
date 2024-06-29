@@ -25,7 +25,7 @@ let score = JSON.parse(localStorage.getItem("score")) || {
     if (isAutoPlay===false) {
       isAutoPlay = true;
       document.getElementById("auto-play-id").innerHTML = "Stop Auto Play";
-      intervalId = setInterval(function(){
+      intervalId = setInterval(() => {
         playGame(getComputerMove());
       },1000)
     }else{
